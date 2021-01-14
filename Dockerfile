@@ -1,6 +1,8 @@
 # Starting Image
 FROM node:14-alpine
 
+# Create a folder for our app and make
+# it the working directory
 RUN mkdir /app
 WORKDIR /app
 
@@ -20,4 +22,4 @@ COPY . /app
 
 EXPOSE 3000
 
-CMD ["node", "bin/www"]
+CMD ["yarh", "start"]
